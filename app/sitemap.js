@@ -20,7 +20,7 @@ export default function sitemap() {
     lastModified: new Date(),
   }));
 
-  const stateRoutes = STATES.map((code) => ({
+  const stateRoutes = STATES.map(([code]) => ({
     url: `${BASE}/states/${stateSlug(code)}`,
     lastModified: new Date(),
   }));
