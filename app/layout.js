@@ -9,9 +9,26 @@ const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-displa
 const jost = Jost({ subsets: ["latin"], variable: "--font-body", display: "swap", weight: ["300", "400", "500", "600"] });
 
 export const metadata = {
-  title: "Justice Connect — Find a USA Attorney You Can Trust",
+  title: {
+    default: "Justice Connect — Find a USA Attorney You Can Trust",
+    template: "%s | Justice Connect",
+  },
   description:
     "Justice Connect is a free USA attorney directory. Search by state and practice area, read guides, and connect with real attorneys — free listings for law firms.",
+  openGraph: {
+    title: "Justice Connect — Find a USA Attorney You Can Trust",
+    description:
+      "Free USA attorney directory. Search by state and practice area, read legal guides, and connect with real attorneys.",
+    url: "https://tasdi.foo",
+    siteName: "Justice Connect",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Justice Connect — Find a USA Attorney You Can Trust",
+    description:
+      "Free USA attorney directory. Search by state and practice area, read legal guides, and connect with real attorneys.",
+  },
 };
 
 export default async function RootLayout({ children }) {

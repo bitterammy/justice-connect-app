@@ -41,8 +41,6 @@ export default function AdminLoginPage() {
         </form>
         <p className="small muted mt-2">
           <Link href="/admin/forgot-password">Forgot password?</Link>
-          {" · "}
-          <Link href="/admin/setup">Create the admin account →</Link>
         </p>
       </div>
     </div>

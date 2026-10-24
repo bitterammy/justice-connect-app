@@ -11,6 +11,15 @@ export async function generateStaticParams() {
   return PRACTICE_AREAS.map((p) => ({ slug: p.slug }));
 }
 
+export async function generateMetadata({ params }) {
+  const area = practiceAreaBySlug(params.slug);
+  if (!area) return {};
+  return {
+    title: `${area.name} Lawyers`,
+    description: `${area.tagline} Find ${area.name.toLowerCase()} attorneys near you on Justice Connect — free directory.`,
+  };
+}
+
 export default async function PracticeAreaPage({ params }) {
   const area = practiceAreaBySlug(params.slug);
   if (!area) notFound();

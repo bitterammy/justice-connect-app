@@ -4,6 +4,16 @@ import { getBlogPost } from "@/lib/db";
 
 export const dynamic = "force-dynamic";
 
+export async function generateMetadata({ params }) {
+  let post = null;
+  try { post = await getBlogPost(params.slug); } catch {}
+  if (!post) return {};
+  return {
+    title: post.title,
+    description: (post.excerpt || post.title).slice(0, 160),
+  };
+}
+
 export default async function BlogPostPage({ params }) {
   let post = null;
   try { post = await getBlogPost(params.slug); } catch {}

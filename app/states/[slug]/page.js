@@ -10,6 +10,16 @@ export async function generateStaticParams() {
   return STATES.map(([, name]) => ({ slug: name.toLowerCase().replace(/[^a-z]+/g, "-") }));
 }
 
+export async function generateMetadata({ params }) {
+  const code = stateFromSlug(params.slug);
+  if (!code) return {};
+  const name = stateName(code);
+  return {
+    title: `${name} Attorneys`,
+    description: `Find licensed attorneys practicing in ${name}. Search by practice area on Justice Connect — free directory.`,
+  };
+}
+
 export default async function StatePage({ params }) {
   const code = stateFromSlug(params.slug);
   if (!code) notFound();
