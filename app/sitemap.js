@@ -9,6 +9,7 @@ export default function sitemap() {
     "/practice-areas",
     "/attorneys",
     "/blog",
+    "/blog/verify-attorney-license-disciplinary-history",
     "/search",
     "/list-firm",
     "/contact",
