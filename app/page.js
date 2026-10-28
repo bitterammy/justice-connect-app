@@ -7,6 +7,63 @@ import { listAttorneys, listBlogPosts, getSettings } from "@/lib/db";
 
 export const dynamic = "force-dynamic";
 
+export const metadata = {
+  alternates: {
+    canonical: "https://www.tasdi.foo/",
+  },
+  openGraph: {
+    images: [
+      {
+        url: "https://www.tasdi.foo/og-image.svg",
+        width: 1200,
+        height: 630,
+        alt: "Justice Connect — Find a USA Attorney You Can Trust",
+      },
+    ],
+  },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      name: "Justice Connect",
+      url: "https://www.tasdi.foo/",
+      description:
+        "Justice Connect is a free USA attorney directory. Search by state and practice area, read guides, and connect with real attorneys — free listings for law firms.",
+    },
+    {
+      "@type": "WebSite",
+      name: "Justice Connect",
+      url: "https://www.tasdi.foo/",
+      description:
+        "Justice Connect is a free USA attorney directory. Search by state and practice area, read guides, and connect with real attorneys — free listings for law firms.",
+    },
+    {
+      "@type": "HowTo",
+      name: "Three steps to the right attorney",
+      step: [
+        {
+          "@type": "HowToStep",
+          name: "Search",
+          text: "Filter real attorney listings by your state and legal need.",
+        },
+        {
+          "@type": "HowToStep",
+          name: "Compare",
+          text: "Read profiles, verified client reviews, and credentials.",
+        },
+        {
+          "@type": "HowToStep",
+          name: "Connect",
+          text: "Call directly or book a consultation — many offer free first meetings.",
+        },
+      ],
+    },
+  ],
+};
+
 export default async function Home() {
   let attorneys = [];
   let posts = [];
@@ -24,6 +81,10 @@ export default async function Home() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <section className="hero">
         <div className="hero-inner">
           <span className="eyebrow">Free USA Attorney Directory</span>
@@ -120,6 +181,20 @@ export default async function Home() {
           <h2 className="section-title">Get listed in front of clients — free</h2>
           <p className="section-sub">Add your firm in minutes. Your listing goes live instantly and you can update it anytime.</p>
           <Link href="/list-firm" className="btn btn-solid">List Your Firm</Link>
+        </div>
+      </section>
+
+      <section className="section" style={{ background: "var(--charcoal-2)", borderTop: "1px solid var(--line)" }}>
+        <div className="container">
+          <span className="eyebrow">Trusted Resources</span>
+          <h2 className="section-title">Official legal help resources</h2>
+          <p className="section-sub">If you need free or low-cost legal help, these official resources can point you to licensed attorneys and legal aid in your state.</p>
+          <div className="card-grid mt-3">
+            <div className="card"><h3><a href="https://www.usa.gov/legal-aid" target="_blank" rel="noopener noreferrer">USA.gov — Find a lawyer for affordable legal aid</a></h3><p>Programs and organizations that give free legal advice and may help you find a free or low-cost attorney.</p></div>
+            <div className="card"><h3><a href="https://www.lsc.gov/about-lsc/what-legal-aid/get-legal-help" target="_blank" rel="noopener noreferrer">Legal Services Corporation — I Need Legal Help</a></h3><p>Find legal aid in your community for people with low incomes.</p></div>
+            <div className="card"><h3><a href="https://www.lawhelp.org/" target="_blank" rel="noopener noreferrer">LawHelp.org</a></h3><p>Find free legal aid near you and get answers to your legal questions.</p></div>
+            <div className="card"><h3><a href="https://abafreelegalanswers.org/" target="_blank" rel="noopener noreferrer">ABA Free Legal Answers</a></h3><p>This site lets people with low incomes ask questions online and have a lawyer answer them. They will not answer questions involving crimes.</p></div>
+          </div>
         </div>
       </section>
     </>
