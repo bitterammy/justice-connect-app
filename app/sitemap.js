@@ -10,6 +10,7 @@ export default function sitemap() {
     "/attorneys",
     "/blog",
     "/blog/verify-attorney-license-disciplinary-history",
+    "/blog/what-to-expect-first-consultation",
     "/search",
     "/list-firm",
     "/contact",
