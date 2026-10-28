@@ -1,0 +1,15 @@
+# Justice Connect
+
+> Justice Connect is a free USA attorney directory. Search by state and practice area, read guides, and connect with real attorneys — free listings for law firms.
+
+## Key pages
+
+- [Justice Connect](https://www.tasdi.foo/): Free USA attorney directory — search by state and practice area.
+- [Legal guides and articles](https://www.tasdi.foo/blog): General US legal-information guides.
+- [How to Verify an Attorney's License and Disciplinary History Before You Hire](https://www.tasdi.foo/blog/verify-attorney-license-disciplinary-history): General information guide, not legal advice.
+- [What to Expect at Your First Consultation with an Attorney](https://www.tasdi.foo/blog/what-to-expect-first-consultation): General information guide, not legal advice.
+- [Search attorneys](https://www.tasdi.foo/search): Search the directory by state and practice area.
+- [Practice areas](https://www.tasdi.foo/practice-areas): Browse the 16 practice areas.
+- [Browse by state](https://www.tasdi.foo/states): Find attorneys by state.
+- [List your firm](https://www.tasdi.foo/list-firm): Free listing for law firms.
+- [Contact](https://www.tasdi.foo/contact): Contact Justice Connect.
