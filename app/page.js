@@ -61,6 +61,59 @@ const jsonLd = {
         },
       ],
     },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "How do I find an attorney on Justice Connect?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Use the search at the top of this page to filter by state and practice area. The directory covers all 50 states and 16 practice areas, and you can browse all listings from the Directory section.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Are there attorneys listed on Justice Connect right now?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Not yet. The directory is brand new, and attorney listings are coming soon. Law firms can list themselves for free, and their listings go live instantly.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How does a law firm get listed?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "A firm fills in the free form on the List Your Firm page. The listing goes live instantly, with no waiting and no fees, and the firm can update it anytime.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What should I prepare for a first consultation with an attorney?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Bring a short summary of your situation, any relevant documents, and a list of questions, including questions about fees and next steps. Our guide on what to expect at your first consultation walks through it in more detail. This is general information, not legal advice.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is the information on Justice Connect legal advice?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "No. Everything on this site is general information, not legal advice. For advice about your specific situation, speak to a licensed attorney in your state.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is Justice Connect free to use?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Searching the directory is free for clients, and listing a firm is free for law firms.",
+          },
+        },
+      ],
+    },
   ],
 };
 
@@ -194,6 +247,38 @@ export default async function Home() {
             <div className="card"><h3><a href="https://www.lsc.gov/about-lsc/what-legal-aid/get-legal-help" target="_blank" rel="noopener noreferrer">Legal Services Corporation — I Need Legal Help</a></h3><p>Find legal aid in your community for people with low incomes.</p></div>
             <div className="card"><h3><a href="https://www.lawhelp.org/" target="_blank" rel="noopener noreferrer">LawHelp.org</a></h3><p>Find free legal aid near you and get answers to your legal questions.</p></div>
             <div className="card"><h3><a href="https://abafreelegalanswers.org/" target="_blank" rel="noopener noreferrer">ABA Free Legal Answers</a></h3><p>This site lets people with low incomes ask questions online and have a lawyer answer them. They will not answer questions involving crimes.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <span className="eyebrow">FAQ</span>
+          <h2 className="section-title">Frequently asked questions</h2>
+          <div className="gold-rule" />
+          <div className="card mt-3">
+            <h3>How do I find an attorney on Justice Connect?</h3>
+            <p>Use the search at the top of this page to filter by state and practice area. The directory covers all 50 states and 16 practice areas, and you can browse all listings from the Directory section.</p>
+          </div>
+          <div className="card mt-3">
+            <h3>Are there attorneys listed on Justice Connect right now?</h3>
+            <p>Not yet. The directory is brand new, and attorney listings are coming soon. Law firms can list themselves for free, and their listings go live instantly.</p>
+          </div>
+          <div className="card mt-3">
+            <h3>How does a law firm get listed?</h3>
+            <p>A firm fills in the free form on the <Link href="/list-firm">List Your Firm</Link> page. The listing goes live instantly, with no waiting and no fees, and the firm can update it anytime.</p>
+          </div>
+          <div className="card mt-3">
+            <h3>What should I prepare for a first consultation with an attorney?</h3>
+            <p>Bring a short summary of your situation, any relevant documents, and a list of questions, including questions about fees and next steps. Our guide on <Link href="/blog/what-to-expect-first-consultation">what to expect at your first consultation</Link> walks through it in more detail. This is general information, not legal advice.</p>
+          </div>
+          <div className="card mt-3">
+            <h3>Is the information on Justice Connect legal advice?</h3>
+            <p>No. Everything on this site is general information, not legal advice. For advice about your specific situation, speak to a licensed attorney in your state.</p>
+          </div>
+          <div className="card mt-3">
+            <h3>Is Justice Connect free to use?</h3>
+            <p>Yes. Searching the directory is free for clients, and listing a firm is free for law firms.</p>
           </div>
         </div>
       </section>
