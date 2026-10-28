@@ -277,7 +277,7 @@ table.data tr:hover td { background: rgba(201, 164, 92, 0.04); }
 /* ── Footer ─────────────────────────────────────────────── */
 .site-footer { border-top: 1px solid var(--line); background: var(--charcoal-2); margin-top: 4rem; }
 .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 2.5rem; padding: 3.5rem 0 2.5rem; }
-.footer-grid h4 { font-size: 0.85rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.1rem; font-family: var(--font-body); font-weight: 500; }
+.footer-grid h3 { font-size: 0.85rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.1rem; font-family: var(--font-body); font-weight: 500; }
 .footer-grid ul { list-style: none; }
 .footer-grid li { margin-bottom: 0.55rem; }
 .footer-grid a { color: var(--muted); font-size: 0.9rem; }
