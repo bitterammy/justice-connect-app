@@ -8,7 +8,7 @@ export default function SiteFooter({ siteName, contactEmail, contactPhone }) {
       <div className="container">
         <div className="footer-grid">
           <div>
-            <h4>{siteName}</h4>
+            <h3>{siteName}</h3>
             <p className="small muted" style={{ maxWidth: 300 }}>
               A free USA attorney directory. Search by state and practice area,
               read legal guides, and connect directly with real law firms.
@@ -21,7 +21,7 @@ export default function SiteFooter({ siteName, contactEmail, contactPhone }) {
             )}
           </div>
           <div>
-            <h4>Practice Areas</h4>
+            <h3>Practice Areas</h3>
             <ul>
               {PRACTICE_AREAS.slice(0, 6).map((p) => (
                 <li key={p.slug}><Link href={`/practice-areas/${p.slug}`}>{p.name}</Link></li>
@@ -30,7 +30,7 @@ export default function SiteFooter({ siteName, contactEmail, contactPhone }) {
             </ul>
           </div>
           <div>
-            <h4>Directory</h4>
+            <h3>Directory</h3>
             <ul>
               <li><Link href="/search">Find a Lawyer</Link></li>
               <li><Link href="/states">Browse by State</Link></li>
@@ -40,7 +40,7 @@ export default function SiteFooter({ siteName, contactEmail, contactPhone }) {
             </ul>
           </div>
           <div>
-            <h4>Legal</h4>
+            <h3>Legal</h3>
             <ul>
               <li><Link href="/privacy">Privacy Policy</Link></li>
               <li><Link href="/terms">Terms of Service</Link></li>
