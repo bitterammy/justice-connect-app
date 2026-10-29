@@ -11,6 +11,7 @@ export default function sitemap() {
     "/blog",
     "/blog/verify-attorney-license-disciplinary-history",
     "/blog/what-to-expect-first-consultation",
+    "/blog/choose-right-type-attorney",
     "/search",
     "/list-firm",
     "/contact",
