@@ -77,7 +77,7 @@ const jsonLd = {
           name: "Are there attorneys listed on Justice Connect right now?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Not yet. The directory is brand new, and attorney listings are coming soon. Law firms can list themselves for free, and their listings go live instantly.",
+            text: "Yes. The directory now lists attorneys across multiple states and practice areas. Law firms can list themselves for free, and their listings go live instantly.",
           },
         },
         {
@@ -262,7 +262,7 @@ export default async function Home() {
           </div>
           <div className="card mt-3">
             <h3>Are there attorneys listed on Justice Connect right now?</h3>
-            <p>Not yet. The directory is brand new, and attorney listings are coming soon. Law firms can list themselves for free, and their listings go live instantly.</p>
+            <p>Yes. The directory now lists attorneys across multiple states and practice areas. Law firms can list themselves for free, and their listings go live instantly.</p>
           </div>
           <div className="card mt-3">
             <h3>How does a law firm get listed?</h3>
