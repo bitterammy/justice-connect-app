@@ -31,6 +31,7 @@ export default async function sitemap() {
     "/blog/what-is-a-retainer-agreement",
     "/blog/what-is-a-statute-of-limitations",
     "/blog/what-is-negligence-and-how-do-you-prove-it",
+    "/blog/what-is-probate-and-how-long-does-it-take",
     "/blog/what-is-small-claims-court",
     "/blog/what-to-expect-first-consultation",
     "/search",
