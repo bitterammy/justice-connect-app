@@ -33,6 +33,7 @@ export default async function sitemap() {
     "/blog/what-is-negligence-and-how-do-you-prove-it",
     "/blog/what-is-probate-and-how-long-does-it-take",
     "/blog/what-is-small-claims-court",
+    "/blog/what-to-do-if-you-receive-a-subpoena",
     "/blog/what-to-expect-first-consultation",
     "/search",
     "/list-firm",
