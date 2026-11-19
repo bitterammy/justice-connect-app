@@ -19,6 +19,7 @@ export default async function sitemap() {
     "/blog/how-attorney-fees-work",
     "/blog/how-to-file-a-complaint-against-an-attorney",
     "/blog/how-to-respond-to-a-cease-and-desist-letter",
+    "/blog/living-will-vs-advance-directive",
     "/blog/mediation-vs-arbitration",
     "/blog/organise-documents-before-meeting-attorney",
     "/blog/red-flags-choosing-attorney",
