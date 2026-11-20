@@ -31,6 +31,7 @@ export default async function sitemap() {
     "/blog/what-is-a-power-of-attorney-and-when-do-you-need-one",
     "/blog/what-is-a-retainer-agreement",
     "/blog/what-is-a-statute-of-limitations",
+    "/blog/what-is-a-trust-and-do-you-need-one",
     "/blog/what-is-negligence-and-how-do-you-prove-it",
     "/blog/what-is-probate-and-how-long-does-it-take",
     "/blog/what-is-small-claims-court",
@@ -93,3 +94,4 @@ export default async function sitemap() {
     (route) => !seen.has(route.url) && seen.add(route.url)
   );
 }
+
