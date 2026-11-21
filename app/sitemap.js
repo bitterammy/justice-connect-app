@@ -25,6 +25,7 @@ export default async function sitemap() {
     "/blog/red-flags-choosing-attorney",
     "/blog/verify-attorney-license-disciplinary-history",
     "/blog/what-happens-at-a-deposition",
+    "/blog/what-happens-if-you-die-without-a-will",
     "/blog/what-happens-if-you-ignore-a-court-summons",
     "/blog/what-happens-if-you-lose-a-lawsuit",
     "/blog/what-is-a-demand-letter",
@@ -94,4 +95,3 @@ export default async function sitemap() {
     (route) => !seen.has(route.url) && seen.add(route.url)
   );
 }
-
