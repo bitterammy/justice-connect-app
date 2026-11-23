@@ -57,6 +57,8 @@ export default async function sitemap() {
 
     "/blog/what-is-a-demand-letter",
 
+    "/blog/what-is-discovery-in-a-lawsuit",
+
     "/blog/what-is-a-power-of-attorney-and-when-do-you-need-one",
 
     "/blog/what-is-a-retainer-agreement",
