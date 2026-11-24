@@ -57,6 +57,8 @@ export default async function sitemap() {
 
     "/blog/what-is-a-demand-letter",
 
+    "/blog/what-is-bail-and-how-does-it-work",
+
     "/blog/what-is-discovery-in-a-lawsuit",
 
     "/blog/what-is-a-power-of-attorney-and-when-do-you-need-one",
