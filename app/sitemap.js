@@ -29,6 +29,8 @@ export default async function sitemap() {
 
     "/blog/choose-right-type-attorney",
 
+    "/blog/felony-vs-misdemeanor-whats-the-difference",
+
     "/blog/how-attorney-fees-work",
 
     "/blog/how-to-file-a-complaint-against-an-attorney",
