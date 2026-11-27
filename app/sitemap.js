@@ -58,13 +58,16 @@ export default async function sitemap() {
     "/blog/what-is-a-class-action-lawsuit",
 
     "/blog/what-is-a-demand-letter",
-    "/blog/what-is-a-plea-bargain-and-should-you-accept-one",
 
     "/blog/what-is-bail-and-how-does-it-work",
 
     "/blog/what-is-discovery-in-a-lawsuit",
 
+    "/blog/what-is-a-plea-bargain-and-should-you-accept-one",
+
     "/blog/what-is-a-power-of-attorney-and-when-do-you-need-one",
+
+    "/blog/what-is-a-restraining-order-and-how-to-get-one",
 
     "/blog/what-is-a-retainer-agreement",
 
