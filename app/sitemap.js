@@ -32,6 +32,7 @@ export default async function sitemap() {
     "/blog/felony-vs-misdemeanor-whats-the-difference",
 
     "/blog/how-attorney-fees-work",
+    "/blog/how-to-appeal-a-court-decision",
 
     "/blog/how-to-file-a-complaint-against-an-attorney",
 
